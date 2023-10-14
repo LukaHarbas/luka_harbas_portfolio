@@ -78,7 +78,12 @@ body {
 }
 
 .vitae {
-    padding: 3rem;
+    padding: 3em;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, 
+                rgba(0, 0, 0, 0.07) 0px 2px 2px, 
+                rgba(0, 0, 0, 0.07) 0px 4px 4px, 
+                rgba(0, 0, 0, 0.07) 0px 8px 8px, 
+                rgba(0, 0, 0, 0.07) 0px 16px 16px;
     h1 {
         text-align: center;
         color: $red;
@@ -234,7 +239,7 @@ body {
                     .time-wrapper {
                         display: inline;
                         line-height: 1em;
-                        font-size: 0.66666em;
+                        font-size: 0.66666rem;
                         color: $red;
                         vertical-align: middle;
                         .time {
@@ -246,9 +251,235 @@ body {
                 }
                 .desc {
                     margin: 1em 0.75em 0 0;
-                    font-size: 0.77777em;
-                    line-height: 1.5em;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
                     color: $white;
+                }
+            }
+        }
+    }
+    .curriculum {
+        text-align: center;
+        padding-top: 100px;
+        p {
+            padding-top: 20px;
+            color: $white;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.my-projects {
+    padding: 6rem;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, 
+                rgba(0, 0, 0, 0.07) 0px 2px 2px, 
+                rgba(0, 0, 0, 0.07) 0px 4px 4px, 
+                rgba(0, 0, 0, 0.07) 0px 8px 8px, 
+                rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    h1 {
+        color: $red;
+        font-size: 2.5rem;
+        font-variant: small-caps;
+        &:nth-of-type(2) {
+            padding-top: 9rem;
+        }
+    }
+    .client-projects,
+    .personal-projects {
+        height: 60vh;
+        padding: 24px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        .client-project,
+        .personal-project {
+            padding: 20px;
+            height: 60vh;
+            width: 30%;
+            .website-image {
+                height: 25vh;
+                width: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        .tech-description {
+            h2 {
+                padding: 8px;
+                color: $red;
+                text-align: center;
+                font-variant: small-caps;
+            }
+            p {
+                color: $red;
+                text-align: center;
+                font-size: 1.25rem;
+            }
+        }
+        .description {
+            padding-top: 12px;
+            p {
+                color: $white;
+                font-size: 1.25rem;
+                line-height: 1.4;
+                letter-spacing: 1px;
+            }
+        }
+        .view-btn {
+            background-color: $red;
+            border-radius: 6px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+            color: #FFFFFF;
+            cursor: pointer;
+            height: 40px;
+            line-height: 40px;
+            outline: 0;
+            overflow: hidden;
+            padding: 0 20px;
+            pointer-events: auto;
+            text-align: center;
+            touch-action: manipulation;
+            user-select: none;
+            -webkit-user-select: none;
+            vertical-align: top;
+            white-space: nowrap;
+            width: 40%;
+            z-index: 9;
+            border: 0;
+            transition: box-shadow .2s;
+            margin: 40px auto;
+            &:hover {
+                box-shadow: $red  0 1px 8px;
+            }
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.contact-info {
+    padding: 6rem;
+    h1 {
+        text-align: center;
+        color: $red;
+        font-size: 2.5rem;
+        font-variant: small-caps;
+        padding-bottom: 3rem;
+    }
+    .wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        .contact-info-form {
+            background-color: $black;
+            width: 30%;
+            display: flex;
+            flex-flow: column;
+            box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 8px;
+            .contact-item {
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                padding: 30px;
+                label {
+                    font-size: 2rem;
+                    padding-bottom: 16px;
+                    color: $red;
+                }
+                input {
+                    height: 50px;
+                    width: 500px;
+                    font-size: 1.75rem;
+                    background-color: $black;
+                    border: 1px solid $red;
+                    color: $white;
+                    padding: 6px 10px;
+                }
+                textarea {
+                    height: 160px;
+                    width: 500px;
+                    background-color: $black;
+                    border: 1px solid $red;
+                    color: $white;
+                    padding: 6px;
+                    font-size: 1.5rem;
+                    letter-spacing: 1px;
+                }
+            }
+            .view-btn {
+                background-color: $red;
+                border-radius: 6px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+                color: #FFFFFF;
+                cursor: pointer;
+                height: 40px;
+                line-height: 40px;
+                outline: 0;
+                overflow: hidden;
+                padding: 0 20px;
+                pointer-events: auto;
+                text-align: center;
+                touch-action: manipulation;
+                user-select: none;
+                -webkit-user-select: none;
+                vertical-align: top;
+                white-space: nowrap;
+                width: 30%;
+                z-index: 9;
+                border: 0;
+                transition: box-shadow .2s;
+                margin: 40px auto;
+                &:hover {
+                    box-shadow: $red 0 1px 8px;
+                }
+                a {
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+        .my-links {
+            width: 30%;
+            h2 {
+                color: $red;
+                text-align: center;
+                padding-top: 60px;
+                font-size: 1.75rem;
+                font-variant: small-caps;
+            }
+            .link-wrapper {
+                display: flex;
+                flex-flow: row;
+                gap: 70px;
+                justify-content: center;
+                margin: 30px 0;
+            }
+            .divider {
+                border: 1px solid #d8323c;
+                width: 90%;
+                display: block;
+                margin: auto;
+            }
+            .information-wrapper {
+                .location,
+                .telephone,
+                .mail {
+                    display: flex;
+                    img {
+                        width: 50px;
+                        margin: 80px 0 0px 80px;
+                    }
+                    p {
+                        margin: 90px 0 0px 80px;
+                        font-size: 1.5rem;
+                        color: $white;
+                        font-variant: small-caps;
+                        letter-spacing: 2px;
+                    }
                 }
             }
         }
