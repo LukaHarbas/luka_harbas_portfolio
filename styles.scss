@@ -276,7 +276,7 @@ body {
 }
 
 .my-projects {
-    padding: 4rem 4rem 4rem 4rem;
+    padding: 4rem 4rem 0;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, 
                 rgba(0, 0, 0, 0.07) 0px 2px 2px, 
                 rgba(0, 0, 0, 0.07) 0px 4px 4px, 
@@ -306,10 +306,12 @@ body {
                 img {
                     height: 100%;
                     width: 100%;
+                    box-shadow: 0 1px 50px $red;
                 }
             }
         }
         .tech-description {
+            padding-top: 50px;
             h2 {
                 padding: 8px;
                 color: $red;
