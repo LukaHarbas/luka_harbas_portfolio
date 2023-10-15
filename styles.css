@@ -387,6 +387,11 @@ body .view-btn:hover {
 .my-projects .personal-projects .personal-project .website-image img {
   height: 100%;
   width: 100%;
+  box-shadow: 0 1px 50px #d8323c;
+}
+.my-projects .client-projects .tech-description,
+.my-projects .personal-projects .tech-description {
+  padding-top: 50px;
 }
 .my-projects .client-projects .tech-description h2,
 .my-projects .personal-projects .tech-description h2 {
